@@ -176,37 +176,27 @@
   .cat-link{ font-size: 0.9rem; border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
   .cat-link:hover{ color: var(--brick); border-color: var(--brick); }
 
-  #philosophy{
-    position: relative;
-    min-height: 420px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .phil-watermark{
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: clamp(8rem, 32vw, 24rem);
-    line-height: 1;
-    color: var(--ink);
-    opacity: 0.08;
-    mix-blend-mode: multiply;
-    pointer-events: none;
-    user-select: none;
-    white-space: nowrap;
-  }
+  #philosophy{ padding: 90px 0; overflow: hidden; }
   .phil-grid{
-    position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 22px;
+    align-items: center;
+    gap: 20px;
     max-width: 520px;
     margin: 0 auto;
     text-align: center;
+  }
+  .phil-watermark{
+    display: block;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(5rem, 22vw, 7rem);
+    line-height: 1;
+    color: var(--ink);
+    opacity: 0.12;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    user-select: none;
   }
   .phil-body p{ max-width: 52ch; color: var(--ink-dim); font-size: 1.05rem; line-height: 1.75; margin: 0 auto 18px; }
   .phil-body p:last-child{ margin-bottom: 0; }
@@ -226,6 +216,18 @@
     height: 1px;
     background: var(--brick);
     margin: 26px auto 0;
+  }
+  @media (min-width: 820px){
+    .phil-grid{
+      grid-template-columns: 300px 1fr;
+      max-width: 900px;
+      text-align: left;
+      gap: 50px;
+    }
+    .phil-watermark{ font-size: 9rem; text-align: left; }
+    .phil-body{ text-align: left; }
+    .phil-body p.lead{ margin: 0; max-width: 26ch; }
+    .phil-rule{ margin: 26px 0 0; }
   }
 
   .strip{ background: var(--bg-panel); padding: 0; }
