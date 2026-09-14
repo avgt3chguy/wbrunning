@@ -167,6 +167,13 @@
     .cat:first-child{ border-top: none; padding-top: 0; }
   }
   .cat-label{ font-family: var(--mono); font-size: 0.75rem; color: var(--slate); margin-bottom: 10px; }
+  .cat-image{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 22px;
+    display: block;
+  }
   .cat-name{ font-family: var(--display); font-weight: 600; font-size: 1.6rem; text-transform: uppercase; margin-bottom: 10px; }
   .cat-desc{ color: var(--ink-dim); font-size: 0.95rem; margin-bottom: 18px; }
   .spec-table{ font-family: var(--mono); font-size: 0.82rem; color: var(--ink-dim); margin-bottom: 20px; }
@@ -303,19 +310,21 @@
     <div class="cat-grid">
 
       <div class="cat">
+        <img class="cat-image" src="wb-tempo-tank.jpg" alt="WB Running Tempo Tank">
         <div class="cat-label">Apparel</div>
-        <div class="cat-name">Tempo Half-Zip</div>
-        <p class="cat-desc">A long-sleeve built for tempo runs and cold starts. Mesh back panel vents heat once you're working.</p>
+        <div class="cat-name">Tempo Tank</div>
+        <p class="cat-desc">A singlet built for warm tempo runs and race day. Mesh side panels vent heat once you're working.</p>
         <div class="spec-table">
-          <div><span>Weight</span><span>128g</span></div>
-          <div><span>Fabric</span><span>4-way stretch</span></div>
+          <div><span>Weight</span><span>92g</span></div>
+          <div><span>Fabric</span><span>Perforated mesh</span></div>
           <div><span>Fit</span><span>Race, not relaxed</span></div>
         </div>
-        <div class="cat-price">$145 AUD</div>
+        <div class="cat-price">$85 AUD</div>
         <a class="cat-link" href="#">View product</a>
       </div>
 
       <div class="cat">
+        <img class="cat-image" src="wb-pace-02.jpg" alt="WB Running Pace 02 trainer">
         <div class="cat-label">Footwear</div>
         <div class="cat-name">Pace 02</div>
         <p class="cat-desc">A daily trainer with enough structure to hold form late in a long run, not just the first 5K.</p>
@@ -329,15 +338,16 @@
       </div>
 
       <div class="cat">
+        <img class="cat-image" src="wb-trail-cap.jpg" alt="WB Running Trail Cap">
         <div class="cat-label">Accessories</div>
-        <div class="cat-name">Stride Belt</div>
-        <p class="cat-desc">A hydration belt built to stay level past 20K, when most belts start to bounce and slide.</p>
+        <div class="cat-name">Trail Cap</div>
+        <p class="cat-desc">A lightweight cap built to stay put on long runs, with mesh side panels for heat you don't want trapped.</p>
         <div class="spec-table">
-          <div><span>Capacity</span><span>3 flasks</span></div>
-          <div><span>Weight</span><span>60g</span></div>
-          <div><span>Closure</span><span>No-bounce strap</span></div>
+          <div><span>Weight</span><span>48g</span></div>
+          <div><span>Fabric</span><span>Perforated mesh</span></div>
+          <div><span>Closure</span><span>Adjustable strap</span></div>
         </div>
-        <div class="cat-price">$65 AUD</div>
+        <div class="cat-price">$45 AUD</div>
         <a class="cat-link" href="#">View product</a>
       </div>
 
@@ -345,8 +355,8 @@
   </section>
 
   <section id="philosophy">
-    <span class="phil-watermark" aria-hidden="true">稳步</span>
     <div class="phil-grid">
+      <span class="phil-watermark" aria-hidden="true">稳步</span>
       <div class="phil-body">
         <p class="lead">We design for every step, the first as important as the last.</p>
         <div class="phil-rule"></div>
@@ -359,7 +369,7 @@
 <div class="strip">
   <div class="wrap">
     <div class="strip-inner">
-      <div class="strip-item"><div class="val">128g</div><div class="desc">Lightest apparel piece, Tempo Half-Zip</div></div>
+      <div class="strip-item"><div class="val">92g</div><div class="desc">Lightest apparel piece, Tempo Tank</div></div>
       <div class="strip-item"><div class="val">8mm</div><div class="desc">Heel-to-toe drop, Pace 02</div></div>
       <div class="strip-item"><div class="val">800km</div><div class="desc">Test distance before release</div></div>
       <div class="strip-item"><div class="val">AUS</div><div class="desc">Designed and tested in Sydney</div></div>
