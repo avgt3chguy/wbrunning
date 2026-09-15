@@ -141,9 +141,18 @@
     margin-top: 8px;
     display: block;
   }
+  .hero-tagline{
+    margin-top: 22px;
+    font-family: var(--body);
+    font-size: 1rem;
+    color: var(--ink-dim);
+    line-height: 1.6;
+  }
+  .hero-tagline p{ margin: 0; }
+  .hero-tagline p.emph{ color: var(--ink); font-weight: 500; margin-top: 4px; }
 
   .banner{ width: 100%; height: clamp(260px, 42vw, 600px); overflow: hidden; position: relative; }
-  .banner img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+  .banner img{ width: 100%; height: 100%; object-fit: cover; object-position: 50% 70%; display: block; }
   .banner::after{
     content: '';
     position: absolute;
@@ -314,8 +323,13 @@
       </div>
       <div>
         <div class="hero-stat">
-          <span class="num" data-count-to="800">0</span>
-          <span class="label">KM tested per pair, Pace 02 trainer</span>
+          <span class="num">1.35M</span>
+          <span class="label">Runners</span>
+        </div>
+        <div class="hero-tagline">
+          <p>Your pace.</p>
+          <p>Your finish line.</p>
+          <p class="emph">WB. Built to keep up with you.</p>
         </div>
       </div>
     </div>
